@@ -1,8 +1,12 @@
 /* eslint sort-keys: error */
 import { useRouter } from 'next/router';
-import { defineConfig, Giscus, PRODUCTS, useTheme } from '@theguild/components';
-
-const HiveLogo = PRODUCTS.HIVE.logo;
+import {
+  defineConfig,
+  Giscus,
+  HiveCombinationMark,
+  PRODUCTS,
+  useTheme,
+} from '@theguild/components';
 
 export default defineConfig({
   docsRepositoryBase: 'https://github.com/ardatan/graphql-mesh/tree/master/website',
@@ -32,5 +36,5 @@ export default defineConfig({
   },
   description: 'GraphQL Gateway Framework and anything-to-GraphQL',
   websiteName: 'GraphQL Mesh',
-  logo: <HiveLogo className="text-green-1000" />,
+  logo: <HiveCombinationMark className="text-green-1000" />,
 });
