@@ -2,6 +2,8 @@
 import { useRouter } from 'next/router';
 import { defineConfig, Giscus, PRODUCTS, useTheme } from '@theguild/components';
 
+const HiveLogo = PRODUCTS.HIVE.logo;
+
 export default defineConfig({
   description: 'GraphQL Gateway Framework and anything-to-GraphQL',
   docsRepositoryBase: 'https://github.com/ardatan/graphql-mesh/tree/master/website',
@@ -30,5 +32,6 @@ export default defineConfig({
       </>
     );
   },
-  websiteName: 'GraphQL-Mesh',
+  websiteName: 'Hive',
+  logo: <HiveLogo className="text-green-1000" />,
 });
