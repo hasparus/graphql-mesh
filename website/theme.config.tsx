@@ -5,9 +5,7 @@ import { defineConfig, Giscus, PRODUCTS, useTheme } from '@theguild/components';
 const HiveLogo = PRODUCTS.HIVE.logo;
 
 export default defineConfig({
-  description: 'GraphQL Gateway Framework and anything-to-GraphQL',
   docsRepositoryBase: 'https://github.com/ardatan/graphql-mesh/tree/master/website',
-  logo: PRODUCTS.MESH.logo({ className: 'w-8' }),
   main: function Main({ children }) {
     const { resolvedTheme } = useTheme();
     const { route } = useRouter();
@@ -32,6 +30,7 @@ export default defineConfig({
       </>
     );
   },
-  websiteName: 'Hive',
+  description: 'GraphQL Gateway Framework and anything-to-GraphQL',
+  websiteName: 'GraphQL Mesh',
   logo: <HiveLogo className="text-green-1000" />,
 });

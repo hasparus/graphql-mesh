@@ -56,6 +56,7 @@ export default withGuildDocs({
     config.resolve.fallback = {
       ...config.resolve.fallback,
       fs: false,
+      module: false,
     };
     config.plugins.push(
       new webpack.NormalModuleReplacementPlugin(/^node:/, resource => {
